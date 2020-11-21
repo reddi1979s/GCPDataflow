@@ -799,12 +799,7 @@
             javac, so they look as expected. Beyond that, we want to
             fail as early as possible.
           -->
-          <execution>
-            <phase>test-compile</phase>
-            <goals>
-              <goal>check</goal>
-            </goals>
-          </execution>
+         
         </executions>
       </plugin>
 
@@ -901,15 +896,7 @@
         <artifactId>avro-maven-plugin</artifactId>
         <version>${avro.version}</version>
         <executions>
-          <execution>
-            <phase>generate-sources</phase>
-            <goals>
-              <goal>schema</goal>
-            </goals>
-            <configuration>
-              <sourceDirectory>${project.basedir}/src/main/resources/schema/avro</sourceDirectory>
-            </configuration>
-          </execution>
+         
         </executions>
       </plugin>
     </plugins>
